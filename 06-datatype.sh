@@ -5,5 +5,6 @@ NUMBER2=$2
 
 TIMESTMAP=$(date)
 SUM=$((NUMBER1+NUMBER2))
+echo "script executed time: $TIMESTAMP"
 
 echo "sum of two number: $SUM"
