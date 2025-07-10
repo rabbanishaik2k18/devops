@@ -1,10 +1,10 @@
 #!/bin/bash
 
-all variables : $@
-all numbers : $#
-script name : $0
-script current directory: $PWD
-home directory for running script : $HOME
-which user is running script : $USER
-process id for current script : $$
-process id for last command in back groun : $!
+echo "all variables : $@"
+echo "all numbers : $#"
+echo "script name : $0"
+echo "script current directory: $PWD"
+echo "home directory for running script : $HOME"
+echo "which user is running script : $USER"
+echo "process id for current script : $$"
+echo "process id for last command in back ground" : $!
