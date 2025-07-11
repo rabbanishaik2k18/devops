@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$1
+USERID=$(id -u)
 
 if [ $USERID -nt 0 ]
 then
