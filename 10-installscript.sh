@@ -23,6 +23,8 @@ then
 
 else
    echo "mysql already installed"
+fi
+
 
 dnf install git -y
 
