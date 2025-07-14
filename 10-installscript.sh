@@ -8,8 +8,6 @@ then
     exit 1
 fi
 
-
-
 dnf install mysql1 -y
 
 dnf install git -y
