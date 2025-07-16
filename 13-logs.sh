@@ -9,7 +9,7 @@ Y="\e[33m"
 LOGS_FOLDER="/var/log/Shell-script-log"
 LOGS_FILE=$(echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
-LOG_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP
+LOG_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP"
 
 
 
