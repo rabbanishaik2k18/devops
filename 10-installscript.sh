@@ -19,7 +19,7 @@ then
         exit 1
         else
         echo "installing mysql is success"
-        fi
+fi
 
 else
 echo "mysql is already installed"
