@@ -36,5 +36,5 @@ echo "files to deleted : $FILES_DELETE"
 
 while read -r file
 do
-echo "$file"
+echo "deleting file : $file"
 done <<< $FILES_DELETE
