@@ -31,7 +31,7 @@ echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 
 
-FILES_DELETE=$(find $SOURCE_DIR "*.logs" -mtime +14)
+FILES_DELETE=$(find $SOURCE_DIR "*.logs" -mtime +14)&>>$LOG_FILE_NAME
 echo "files to deleted : $FILES_DELETE"
 
 while read -r file
