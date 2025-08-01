@@ -40,7 +40,7 @@ then
 echo "$DEST_DIR is does not exist"
 exit 1
 fi
-find $SOUR_DIR -name ".log" -mtime +$DAYS
+find $SOUR_DIR -name "*.log" -mtime +$DAYS
 FILES=$(find $SOUR_DIR -name "*.log" -mtime +$DAYS)
 
 echo "files are : $FILES"
