@@ -38,3 +38,5 @@ if [ ! -d $DEST_DIR ]
 then
 echo "$DEST_DIR is does not exist"
 fi
+find $SOUR_DIR -name ".log" -mtime +$DAYS
+
