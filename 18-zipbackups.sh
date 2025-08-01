@@ -26,7 +26,7 @@ USAGE(){
 mkdir -p /home/ec2-user/app-logs
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
 
-if [ @$ -lt 2 ]
+if [ $# -lt 2 ]
 then
 USAGE
 fi
