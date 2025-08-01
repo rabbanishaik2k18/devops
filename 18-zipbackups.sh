@@ -20,7 +20,13 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP"
 
 USAGE(){
     echo " usage :: sh 18-zipbackups.sh <SOUR_DIR> <DEST_DIR> <DAYS>"
+    exit 1
 }
 
 mkdir -p /home/ec2-user/app-logs
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
+
+if [ @$ -lt 2 ]
+then
+USAGE
+fi
