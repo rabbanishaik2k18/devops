@@ -30,3 +30,11 @@ if [ $# -lt 2 ]
 then
 USAGE
 fi
+if [ ! -d $SOUR_DIR ]
+then
+echo "$SOUR_DIR is does not exist"
+fi
+if [ ! -d $DEST_DIR ]
+then
+echo "$DEST_DIR is does not exist"
+fi
