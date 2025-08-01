@@ -33,10 +33,14 @@ fi
 if [ ! -d $SOUR_DIR ]
 then
 echo "$SOUR_DIR is does not exist"
+exit 1
 fi
 if [ ! -d $DEST_DIR ]
 then
 echo "$DEST_DIR is does not exist"
+exit 1
 fi
 find $SOUR_DIR -name ".log" -mtime +$DAYS
+FILES=$(find $SOUR_DIR -name ".log" -mtime +$DAYS)
 
+echo "files are : $FILES"
