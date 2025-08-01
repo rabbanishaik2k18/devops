@@ -19,8 +19,8 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP"
 
 
 USAGE(){
-    echo " usage :: sh 18-zipbackups.sh <SOUR_DIR> <DEST_DIR> <DAYS>"
-    exit 1
+    echo -e " usage :: sh 18-zipbackups.sh <SOUR_DIR> <DEST_DIR> <DAYS>"
+    
 }
 
 mkdir -p /home/ec2-user/app-logs
