@@ -30,6 +30,11 @@ then
 echo "$SOURCE_DIR does not exists"
 exit
 fi
+if [ ! -d $DEST_DIR ]
+then
+echo "$DEST_DIR does not exists"
+exit
+fi
 
 
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
