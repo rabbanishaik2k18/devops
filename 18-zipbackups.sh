@@ -27,7 +27,7 @@ USAGE
 fi
 if [ ! -d $SOURCE_DIR ]
 then
-echo "$SOURCE_DIR does not exists
+echo "$SOURCE_DIR does not exists"
 exit
 fi
 
