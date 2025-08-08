@@ -37,7 +37,7 @@ then
 echo "$DEST_DIR does not exists"
 fi
 
-FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+FILES=$(find $SOURCE_DIR -name "*.log")
 echo "files are : $FILES"
 
 
