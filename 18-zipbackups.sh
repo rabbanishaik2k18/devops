@@ -40,6 +40,12 @@ fi
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 echo "files are : $FILES"
 
+if [ -n "$FILES" ]
+then
+echo "files are : $FILES"
+else
+echo "No files exists older than $DAYS"
+fi
 
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
 
