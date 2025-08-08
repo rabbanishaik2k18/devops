@@ -11,7 +11,7 @@ SOURCE_DIR=$1
 DEST_DIR=$2
 DAYS=${3:-14}
 
-LOGS_FOLDER="/var/log/Shell-script-log"
+LOGS_FOLDER="/home/ec2-user/Shell-script-log"
 LOGS_FILE=$(echo $0 | cut -d "." -f1)
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 LOG_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP"
@@ -20,6 +20,8 @@ USAGE(){
     echo "usage :: sh 18-zipbackups.sh <SOURCE_DIR> <DEST_DIR>"
     exit 1
 }
+
+mkdir -p 
 
 if [ $# -lt 2 ]
 then 
