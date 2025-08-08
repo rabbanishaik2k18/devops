@@ -50,6 +50,12 @@ find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip -@ "$ZIP_FILE" &>>$LOG_FILE_N
 if [ -f "$ZIP_FILE" ]
 then 
 echo "zip file created successfully"
+
+while read -r file
+do
+echo "deleting files : $file"
+rm -rf $FILES_DELETE
+done <<< $FILES
 else
 echo "zip file not created"
 fi
