@@ -53,8 +53,8 @@ echo "zip file created successfully"
 
 while read -r file
 do
-echo "deleting files : $file"
-rm -rf $FILES_DELETE
+echo "deleting files : $FILES"
+rm -rf $FILES
 done <<< $FILES
 else
 echo "zip file not created"
