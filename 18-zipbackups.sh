@@ -38,7 +38,7 @@ echo "$DEST_DIR does not exists"
 fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
-echo "$FILES"
+echo "files are : $FILES"
 
 
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
