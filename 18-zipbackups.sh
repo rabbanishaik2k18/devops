@@ -25,6 +25,11 @@ if [ $# -lt 2 ]
 then 
 USAGE
 fi
+if [ ! -d $SOURCE_DIR ]
+then
+echo "$SOURCE_DIR does not exists
+exit
+fi
 
 
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
