@@ -51,7 +51,7 @@ if [ -f "$ZIP_FILE" ]
 then 
 echo "zip file created successfully"
 
-while read -r file
+while read -r FILES
 do
 echo "deleting files : $FILES"
 rm -rf $FILES
