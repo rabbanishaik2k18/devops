@@ -21,7 +21,7 @@ USAGE(){
     exit 1
 }
 
-mkdir -p 
+mkdir -p /home/ec2-user/Shell-script-log
 
 if [ $# -lt 2 ]
 then 
