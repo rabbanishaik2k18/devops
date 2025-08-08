@@ -35,8 +35,10 @@ fi
 if [ ! -d $DEST_DIR ]
 then
 echo "$DEST_DIR does not exists"
-
 fi
+
+FILES=${find "$SOURCE_DIR" -name "*.log"}
+echo "$FILES"
 
 
 echo "script installed date: $TIMESTAMP" &>>$LOG_FILE_NAME
